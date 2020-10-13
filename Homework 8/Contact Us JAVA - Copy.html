@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>ContactUs JAVA</title>
+    <style>
+        body{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
+        }
+        </style>
+    
+    
+    <script>
+
+        function checkForm()
+        {
+        var name;
+        name = document.getElementById("txtName").value;
+        if(name == "")
+            {
+            document.getElementById("txtName").style.backgroundColor = "red"; 
+            document.getElementById("txtName").focus();
+            window.alert("Name is required.");
+            }
+        else
+            {
+            document.getElementById("txtName").style.backgroundColor = "White"; 
+            }
+        
+        var name;
+        name = document.getElementById("txtEmail").value;
+        if(name == "")
+            {
+            document.getElementById("txtEmail").style.backgroundColor = "red"; 
+            document.getElementById("txtEmail").focus();
+            window.alert("Email is required.");
+            }
+        else
+            {
+            document.getElementById("txtEmail").style.backgroundColor = "White"; 
+            }
+        
+        var name;
+        name = document.getElementById("txtPhone").value;
+        if(name == "")
+            {
+            document.getElementById("txtPhone").style.backgroundColor = "red"; 
+            document.getElementById("txtPhone").focus();
+            window.alert("Phone Numer is required.");
+            }
+        else
+            {
+            document.getElementById("txtPhone").style.backgroundColor = "White"; 
+            }
+
+            
+        }
+        
+    </script>
+
+
+
+</head>
+<body>
+   
+    <table>
+
+        <tr>
+        <td>Name</td>
+        <td><input type="text" id="txtName"></td>
+        </tr>
+        
+        <tr>
+        <td>Email</td>
+        <td><input type="text" id="txtEmail"></td>
+        </tr>
+        
+        <tr>
+        <td>Phone Number</td>
+        <td><input type="text" id="txtPhone"></td>
+        </tr>
+        
+        <tr>
+            <td colspan="2"><button id="btnSubmit" onClick="checkForm();">Submit</button></td>
+            </tr>
+        </table>   
+    
+       
+
+</body>
+</html>
